@@ -24,6 +24,7 @@ def follow_followers(api):
 # Tweets text with media object
 def tweet(text, media, api):
     api.update_status(text, media_ids=[media.media_id])
+    logger.info("Tweeting...")
 
 
 # Gets a media object from reddit image url
